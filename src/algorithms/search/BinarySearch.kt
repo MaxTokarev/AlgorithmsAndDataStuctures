@@ -16,7 +16,7 @@ class IntBinarySearch : Search<Int> {
         var highest = items.size - 1
 
         while (lowest <= highest) {
-            val mid = lowest + highest
+            val mid = (lowest + highest) / 2
             val guess = items[mid]
             when {
                 item == guess -> return SearchResult.Success(mid)

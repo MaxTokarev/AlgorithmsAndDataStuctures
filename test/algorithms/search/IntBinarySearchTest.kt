@@ -16,7 +16,7 @@ internal class IntBinarySearchTest {
         val pickedItem = 333
 
         val actual = searcher.search(mockSortedItems, pickedItem)
-        val expected = SearchResult.Success(9)
+        val expected = SearchResult.Success(mockSortedItems.indexOf(pickedItem))
 
         assertTrue { actual == expected }
     }
