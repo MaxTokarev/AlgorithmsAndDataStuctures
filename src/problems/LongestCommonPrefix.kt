@@ -35,8 +35,19 @@ class LongestCommonPrefix {
             }
         }
     }
-}
 
-fun main() {
-    println(LongestCommonPrefix().execute(arrayOf("flower", "float", "flo")))
+    fun executeFast(strings: Array<String>): String {
+        var result = strings.first()
+
+        for (i in strings.indices){
+            while(strings[i].indexOf(result) != 0) {
+                result = result.substring(0, result.length - 1)
+                if(result.isEmpty()){
+                    return result
+                }
+            }
+        }
+
+        return result
+    }
 }
