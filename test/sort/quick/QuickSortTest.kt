@@ -2,7 +2,7 @@ package sort.quick
 
 import algorithms.sort.QuickSort
 import algorithms.sort.Sort
-import org.junit.Test
+import org.junit.jupiter.api.Test
 import kotlin.test.assertTrue
 
 class QuickSortTest {
