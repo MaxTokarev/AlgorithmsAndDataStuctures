@@ -1,5 +1,7 @@
 package problems
 
+import problems.common.ListNode
+
 /**
  * Problem - https://leetcode.com/problems/merge-two-sorted-lists/
  *
@@ -13,10 +15,6 @@ package problems
  */
 interface MergeTwoSortedListsSolution {
     fun mergeTwoLists(l1: ListNode?, l2: ListNode?): ListNode?
-
-    data class ListNode(var `val`: Int) {
-        var next: ListNode? = null
-    }
 
     class Own : MergeTwoSortedListsSolution {
         override fun mergeTwoLists(l1: ListNode?, l2: ListNode?): ListNode? {
